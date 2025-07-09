@@ -1,0 +1,30 @@
+{
+  "version": 4,
+  "configurations": [
+    {
+      "name": "Win32",                        
+      "intelliSenseMode": "windows-msvc-x64", 
+      "compilerPath": 
+        "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe",
+      "includePath": [
+        "${workspaceFolder}/**",
+
+        // ---- MSVC C/C++ Standard Library ----
+        "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/include",
+
+        "C:/Users/Cameron/Documents/SFML-3.0.0/include",
+
+
+        // ---- CUDA Toolkit Includes ----
+        "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.9/include"
+      ],
+      "defines": [
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "cStandard": "c11",
+      "cppStandard": "c++17"
+    }
+  ]
+}

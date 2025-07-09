@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Build & Debug CUDA (MSVC)",
+      "type": "cppvsdbg",                   // Use the MSVC debug engine
+      "request": "launch",
+      "program": "${workspaceFolder}/simulation.exe",
+      "args": [],                           // add any command-line args here
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build simulation.cu",
+      "environment": [],
+      "console": "integratedTerminal"
+    }
+  ]
+}

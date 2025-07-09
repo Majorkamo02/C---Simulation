@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build simulation.cu",
+      "type": "shell",
+      "command": "nvcc",
+      "args": [
+        "-g",                   
+        "${workspaceFolder}/simulation.cu",
+        "-o",
+        "${workspaceFolder}/simulation.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$msCompile"]
+    }
+  ]
+}
