@@ -30,8 +30,8 @@ __global__ void collisionKernel(Particle* particles, int size)
     float dx = particles[i].pos.x - particles[j].pos.x;                                         // Diff in x
     float dy = particles[i].pos.y - particles[j].pos.y;                                         // Diff in y
 
-    float r2 = sqrt(dx * dx + dy * dy);                                                         //
-    float h = 30.0f;                                                                            // Radius of effect
+    float r2 = dx * dx + dy * dy;                                                         //
+    float h = 20.0f;                                                                            // Radius of effect
     float h2 = h * h;                                                                           //
 
     if (r2 < h2) {
@@ -109,7 +109,7 @@ void compute(vector<Particle>& particles, int screenSize, int totalParticles, sf
 
     for (size_t i = 0; i < particles.size(); i++)
     {
-        float normalizedDensity = min(particles[i].density, 255.0f);
+        float normalizedDensity = min(particles[i].density*4000.0f, 255.0f);
         unsigned char colorValue = static_cast<unsigned char>(normalizedDensity);
 
         // Set color: Red base, green intensity changes with density

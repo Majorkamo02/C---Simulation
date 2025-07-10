@@ -11,7 +11,7 @@ int main(){
     // Initialize variables 
     FPS fps;
     unsigned int screensize = 1000;
-    float particleCount = 15000;
+    float particleCount = 10000;
     int simSpeed = 0;
 
 
